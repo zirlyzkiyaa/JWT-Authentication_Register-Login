@@ -1,0 +1,29 @@
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiWmlybHlmZXJhIiwiaWF0IjoxNjg1MDg4MTE1LCJleHAiOjE2ODUwODgxMzB9.im0EsvVctb3tciGgG9j_Qp51yyCuM-GjEIeMdIxV7Fs
+
+###
+
+DELETE http://localhost:4000/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiWmlybHlmZXJhIiwiaWF0IjoxNjg1MDc1MzY3fQ.gnQjuwCY-ClHWWelRmgdRMnivUr7gTKciUCn8eURMMg"
+}
+
+###
+
+
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiWmlybHlmZXJhIiwiaWF0IjoxNjg1MDg4MDQ2fQ.LgJFUZt1hlsLUkZX9yrsEOWAcnjYmoZs5AtL8O4GZCc"
+}
+###
+
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "username": "Zirlyfera"
+}
